@@ -4,8 +4,8 @@ from djmoney.models.fields import MoneyField
 # Create your models here.
 
 ROLE = (
-    ("SOFTWARE ENGINEER"), ("SOFTWARE ENGINEER"),
-    ("MECHANICAL ENGINEER"), ("MECHANICAL ENGINEER")
+    ("SOFTWARE ENGINEER", "SOFTWARE ENGINEER"),
+    ("MECHANICAL ENGINEER", "MECHANICAL ENGINEER"),
 )
 
 class Salary(models.Model):
@@ -15,5 +15,5 @@ class Salary(models.Model):
 
     def __str__(self):
         return self.fullname
-        
+
     

@@ -28,6 +28,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # installed app
+    'djmoney',
+
     "payments.apps.PaymentsConfig"
 ]
 

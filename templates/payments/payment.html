@@ -8,7 +8,8 @@
 
 <div class="align-middle">
   <form>
-    <div class="row">
+    {{ form.as_p }}
+    <!-- <div class="row">
       <div class="col">
         <input type="text" class="form-control" placeholder="First name" aria-label="First name">
       </div>
@@ -19,7 +20,7 @@
     <div class="mb-3">
       <label for="amount" class="form-label">Amount</label>
       <input type="number" class="form-control" placeholder="Enter amount">
-    </div>
+    </div> -->
     <button class="btn btn-primary" type="button" id="start-payment-button" onclick="makePayment()">Pay Now</button>
   </form>
 </div>

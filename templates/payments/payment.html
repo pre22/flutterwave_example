@@ -5,12 +5,21 @@
 {% block title %}Cart | FlutterWave Integration{% endblock title %}
 
 {% block content %}
-<script src="https://checkout.flutterwave.com/v3.js"></script>
+
 <form>
-  <div>
-    Your order is ₦54,600
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
   </div>
-  <button type="button" id="start-payment-button" onclick="makePayment()">Pay Now</button>
+  <div class="mb-3">
+    <label for="amount" class="form-label">Amount</label>
+    <input type="number" class="form-control" placeholder="Enter amount">
+  </div>
+  <button class="btn btn-primary" type="button" id="start-payment-button" onclick="makePayment()">Pay Now</button>
 </form>
 <script>
   function makePayment() {
@@ -38,4 +47,6 @@
     });
   }
 </script>
+
+
 {% endblock content %}

@@ -31,7 +31,9 @@ INSTALLED_APPS = [
     # installed app
     'djmoney',
 
-    "payments.apps.PaymentsConfig"
+    "payments.apps.PaymentsConfig",
+    "products.apps.ProductsConfig"
+
 ]
 
 MIDDLEWARE = [

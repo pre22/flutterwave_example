@@ -1,4 +1,4 @@
-from django.views.generic import CreateView
+from django.views.generic import CreateView, TemplateView
 from django.urls import reverse_lazy
 from payments.models import Salary
 
@@ -12,3 +12,6 @@ class PaymentView(CreateView):
     #     form.instance.employee = self.request.user.employee
     #     form.instance.company = self.request.user.employee.company
     #     return super().form_valid(form)  
+
+class TransactionSuccessView(TemplateView):
+    template_name = "payments/success.html"
